@@ -1,0 +1,52 @@
+.container {
+  text-align: center;
+  margin: auto;
+  width: 90%;
+  &__title {
+    margin: 50px 0 15px 0;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & > img {
+      height: 40px;
+      width: 40px;
+    }
+  }
+  &__board {
+    &__row1,
+    &__row2,
+    &__row3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &__boxes {
+        height: 100px;
+        width: 100px;
+        display: flex;
+        border: 4px solid rgb(170, 194, 170);
+        cursor: pointer;
+        border-radius: 12px;
+        background-color: rgb(75, 53, 219);
+        & > img {
+          padding: 20px;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+  &__reset {
+    width: 200px;
+    height: 70px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #1f4020;
+    font-size: 26px;
+    color: #26ffcd;
+    margin: 25px 0 50px 0;
+  }
+}
